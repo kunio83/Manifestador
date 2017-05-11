@@ -32,8 +32,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DotNetZip, Version=1.10.1.0, Culture=neutral, PublicKeyToken=6583c7c814667745, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotNetZip.1.10.1\lib\net20\DotNetZip.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,11 +47,46 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FileHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XmlHelper.cs" />
+    <Compile Include="Zipper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="bin\Debug\Winrar\default.sfx" />
+    <None Include="bin\Debug\Winrar\default64.sfx" />
+    <None Include="bin\Debug\Winrar\Descript.ion" />
+    <None Include="bin\Debug\Winrar\licencia.rtf" />
+    <None Include="bin\Debug\Winrar\rar.lng" />
+    <None Include="bin\Debug\Winrar\rarext.lng" />
+    <None Include="bin\Debug\Winrar\RarFiles.lst" />
+    <None Include="bin\Debug\Winrar\uninstall.lng" />
+    <None Include="bin\Debug\Winrar\Uninstall.lst" />
+    <None Include="bin\Debug\Winrar\WinCon.sfx" />
+    <None Include="bin\Debug\Winrar\wincon64.sfx" />
+    <None Include="bin\Debug\Winrar\winrar.chm" />
+    <None Include="bin\Debug\Winrar\winrar.lng" />
+    <None Include="bin\Debug\Winrar\zip.sfx" />
+    <None Include="bin\Debug\Winrar\zip64.sfx" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Winrar\7zxa.dll" />
+    <Content Include="bin\Debug\Winrar\Ace32Loader.exe" />
+    <Content Include="bin\Debug\Winrar\Leame.txt" />
+    <Content Include="bin\Debug\Winrar\License.txt" />
+    <Content Include="bin\Debug\Winrar\Novedades.txt" />
+    <Content Include="bin\Debug\Winrar\Order.htm" />
+    <Content Include="bin\Debug\Winrar\Rar.exe" />
+    <Content Include="bin\Debug\Winrar\Rar.txt" />
+    <Content Include="bin\Debug\Winrar\RarExt.dll" />
+    <Content Include="bin\Debug\Winrar\RarExt32.dll" />
+    <Content Include="bin\Debug\Winrar\UNACEV2.DLL" />
+    <Content Include="bin\Debug\Winrar\Uninstall.exe" />
+    <Content Include="bin\Debug\Winrar\UnRAR.exe" />
+    <Content Include="bin\Debug\Winrar\WinRAR.exe" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
